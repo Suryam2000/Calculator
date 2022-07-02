@@ -1,0 +1,46 @@
+html,body{
+    height: 100%;
+}
+
+.container1{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+}
+
+#calc-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+}
+
+#screen{
+    border: 2px solid #dee2e6;
+    height: 100px;
+    background-color: rgb(212, 208, 208);
+    position: relative;
+}
+
+#value-box{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    height: 60px;
+    max-width: 290px;
+    overflow: scroll;
+}
+
+#value-box::-webkit-scrollbar{
+    display: none;
+}
+
+.table{
+    border: 1px solid;
+}
+
+td{
+    text-align: center;
+    padding: 20px 0px !important;
+}
