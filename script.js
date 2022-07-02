@@ -30,6 +30,7 @@ var arg = 0;
 var op = '';
 var res = 0;
 var point = 0.0;
+var mod = 0;
 
 
 
@@ -221,10 +222,14 @@ cancel.addEventListener('click',function(){
         value.innerText=0;
     }
     if(op!=''&&arg!=0){
-        arg=0;
+        mod = arg%10;
+        arg -= mod;
     }
     else{
         op='';
+        mod = arg%10;
+        arg -= mod;
+        arg /= 10;
     }
 });
 
